@@ -29,7 +29,12 @@ f(1,2)
 
 name = 'Jane'
 
-if name.casefold() == 'Jane':
+if name.casefold() == 'jane':
   print('Right name is passed')
 else:
   raise ValueError('Please pass the name Jane')
+
+# File reading 
+
+with open('requirements.txt') as f:
+    print(f.readlines()) 
