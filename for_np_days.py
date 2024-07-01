@@ -38,3 +38,11 @@ else:
 
 with open('requirements.txt') as f:
     print(f.readlines()) 
+
+# print factorial using recursion 
+
+def fact(n):
+    if n == 1:
+        return n
+    else:
+        return n* fact(n-1)
