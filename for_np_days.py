@@ -48,3 +48,10 @@ def fact(n):
         return n* fact(n-1)
 
 print("Hello world!")
+
+# Write to file 
+
+with open('dummy.txt', 'w') as f:
+  f.write("Hello, i'm learning how to write to a file\n")
+
+
