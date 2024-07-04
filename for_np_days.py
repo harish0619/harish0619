@@ -54,4 +54,6 @@ print("Hello world!")
 with open('dummy.txt', 'w') as f:
   f.write("Hello, i'm learning how to write to a file\n")
 
+print("Dummy print statement")
+
 
