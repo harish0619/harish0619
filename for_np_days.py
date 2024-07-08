@@ -60,4 +60,7 @@ print("Not well")
 
 print("Not well")
 
+with open('dummy.txt', 'a') as f:
+  f.write("Appending to an existing file\n")
+
 
