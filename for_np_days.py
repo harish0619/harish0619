@@ -63,4 +63,12 @@ print("Not well")
 with open('dummy.txt', 'a') as f:
   f.write("Appending to an existing file\n")
 
+# print fibonacci using recursion 
+
+def fib(n):
+  if n<=1:
+    return n
+  else:
+    return (fib(n-1) + fib(n-2))
+
 
