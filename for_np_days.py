@@ -76,4 +76,12 @@ print("Not well")
 print("Not well")
 
 
+# Import exercises 
+import matplotlib as mpl
+
+import math 
+
+from math import sin, cos, tan, pi
+
+
 
