@@ -83,5 +83,12 @@ import math
 
 from math import sin, cos, tan, pi
 
+# Learning time and date modules 
+
+import time, calendar 
+
+gm_time = time.gmtime(0) # Converts an epoch time to normal time 
+
+calendar.timegm( gm_time ) # Converts a normal time to epoch time 
 
 
