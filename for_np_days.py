@@ -91,4 +91,6 @@ gm_time = time.gmtime(0) # Converts an epoch time to normal time
 
 calendar.timegm( gm_time ) # Converts a normal time to epoch time 
 
+print('dull day')
+
 
