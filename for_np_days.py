@@ -100,3 +100,11 @@ print('dull day')
 print('dull day') 
 
 print('dull day')
+
+import csv
+with open('text.csv') as f:
+  reader = csv.reader(f)
+  for row in reader:
+    print(row)
+
+
