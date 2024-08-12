@@ -107,4 +107,8 @@ with open('text.csv') as f:
   for row in reader:
     print(row)
 
+import random
+
+print(random.random())
+
 
