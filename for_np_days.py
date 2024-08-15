@@ -111,4 +111,7 @@ import random
 
 print(random.random())
 
+random.seed(0)
 
+for _ in range(5):
+    print(random.random())
