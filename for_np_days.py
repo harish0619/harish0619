@@ -115,3 +115,10 @@ random.seed(0)
 
 for _ in range(5):
     print(random.random())
+
+random.seed(1)
+
+for _ in range(5):
+    print(random.randrange(1,6))
+
+
