@@ -122,3 +122,4 @@ for _ in range(5):
     print(random.randrange(1,6))
 
 
+print('dull day')
