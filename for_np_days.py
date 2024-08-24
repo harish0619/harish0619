@@ -123,3 +123,5 @@ for _ in range(5):
 
 
 print('dull day')
+
+print('dull day')
