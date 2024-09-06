@@ -125,3 +125,15 @@ for _ in range(5):
 print('dull day')
 
 print('dull day')
+
+class Person:
+  ''' A dummy class'''
+  def __init__(self, firstname='John', lastname='Doe'):
+    self.firstname = firstname
+    self.lastname = lastname 
+
+  def display(self):
+    print(f"The person is {self.firstname} {self.lastname}")
+
+
+
