@@ -127,13 +127,28 @@ print('dull day')
 print('dull day')
 
 class Person:
-  ''' A dummy class'''
+  '''A dummy class'''
   def __init__(self, firstname='John', lastname='Doe'):
     self.firstname = firstname
     self.lastname = lastname 
 
   def display(self):
     print(f"The person is {self.firstname} {self.lastname}")
+
+class Bank:
+  '''A dummy class to create new banks'''
+  def __init__(self):
+    self.balance = 0
+
+  def deposit(self, amount):
+    self.balance += amount
+
+  def withdraw(self, amount):
+    if self.balance > amount:
+      self.balance -= amount
+
+  def balance(self):
+    print(f"The current balance is: {self.balance}")
 
 
 
