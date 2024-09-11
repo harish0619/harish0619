@@ -137,8 +137,8 @@ class Person:
 
 class Bank:
   '''A dummy class to create new banks'''
-  def __init__(self):
-    self.balance = 0
+  def __init__(self, initial_deposit):
+    self.balance = initial_deposit
 
   def deposit(self, amount):
     self.balance += amount
@@ -147,7 +147,7 @@ class Bank:
     if self.balance > amount:
       self.balance -= amount
 
-  def balance(self):
+  def display_balance(self):
     print(f"The current balance is: {self.balance}")
 
 
