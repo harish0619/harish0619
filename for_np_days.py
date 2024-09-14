@@ -130,7 +130,8 @@ class Person:
   '''A dummy class'''
   def __init__(self, firstname='John', lastname='Doe'):
     self.firstname = firstname
-    self.lastname = lastname 
+    self.lastname = lastname
+    self.email = ''
 
   def display(self):
     print(f"The person is {self.firstname} {self.lastname}")
@@ -149,6 +150,9 @@ class Bank:
 
   def display_balance(self):
     print(f"The current balance is: {self.balance}")
+
+  def update_details(self, email):
+    self.email = email 
 
 
 
