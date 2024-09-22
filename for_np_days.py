@@ -138,7 +138,10 @@ class Person:
 
 class Bank:
   '''A dummy class to create new banks'''
-  def __init__(self, initial_deposit):
+  def __init__(self, initial_deposit, firstName, lastName, email=' '):
+    self.firstname = firstName
+    self.lastname = lastName
+    self.email = email
     self.balance = initial_deposit
 
   def deposit(self, amount):
@@ -153,6 +156,8 @@ class Bank:
 
   def update_details(self, email):
     self.email = email 
+
+hdfc = Bank(50000, 'Harish', 'Dhandapani', 'hello@xyz.com')
 
 
 
