@@ -125,3 +125,39 @@ for _ in range(5):
 print('dull day')
 
 print('dull day')
+
+class Person:
+  '''A dummy class'''
+  def __init__(self, firstname='John', lastname='Doe'):
+    self.firstname = firstname
+    self.lastname = lastname
+    self.email = ''
+
+  def display(self):
+    print(f"The person is {self.firstname} {self.lastname}")
+
+class Bank:
+  '''A dummy class to create new banks'''
+  def __init__(self, initial_deposit, firstName, lastName, email=' '):
+    self.firstname = firstName
+    self.lastname = lastName
+    self.email = email
+    self.balance = initial_deposit
+
+  def deposit(self, amount):
+    self.balance += amount
+
+  def withdraw(self, amount):
+    if self.balance > amount:
+      self.balance -= amount
+
+  def display_balance(self):
+    print(f"The current balance is: {self.balance}")
+
+  def update_details(self, email):
+    self.email = email 
+
+hdfc = Bank(50000, 'Harish', 'Dhandapani', 'hello@xyz.com')
+
+
+
