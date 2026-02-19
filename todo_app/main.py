@@ -8,7 +8,7 @@ todos: list[Any] = []
 # This is called a loop.
 
 while True:
-    user_action: str = input("Type add, show or exit:").strip()
+    user_action: str = input("Type add, show, edit or exit:").strip()
 
     # If nothing matches the condition below, loop will continue
     match user_action:
@@ -20,6 +20,10 @@ while True:
         case "show":
             for item in todos:
                 print(item)
+        case "edit":
+            number = int(input("Number of the todo to edit: "))
+            new_todo = input("Enter new todo: ")
+            todos[number-1] = new_todo
         case "exit":
             break
         # case _: # This is to match anything else a user types by mistake
